@@ -11,10 +11,6 @@ const configuration = new Configuration({
   });
   const openai = new OpenAIApi(configuration);
 
-router.get("/", (req, res) => {
-    res.send(`Hollo world from the server`);
-});
-
 
 router.post('/register', async (req, res) => {
 
